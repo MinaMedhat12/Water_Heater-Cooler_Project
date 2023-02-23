@@ -52,7 +52,7 @@ static void Increment(void)
 	hpbutt_getStatus(PUSH_BUTTON_1,&butt1_status);
 	
 	// enter setting mode for First Time
-	if(butt2_status == LOW && int_mode == OFF )
+	if(butt1_status == LOW && int_mode == OFF )
 	{
 		//raising set mode flag to ON
 		int_mode = ON ;
