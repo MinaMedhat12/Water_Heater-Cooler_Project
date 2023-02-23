@@ -48,8 +48,8 @@ u8_t cooling = OFF;
 
 static void Increment(void)
 {
-	// check the status of the down button
-	hpbutt_getStatus(PUSH_BUTTON_2,&butt2_status);
+	// check the status of the up button
+	hpbutt_getStatus(PUSH_BUTTON_1,&butt1_status);
 	
 	// enter setting mode for First Time
 	if(butt2_status == LOW && int_mode == OFF )
